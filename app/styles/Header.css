@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #00539f;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.navbar a:hover {
+  background-color: #428bca;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: url("https://www.motorpointarenanottingham.com/ArticleMedia/Images/Motorpoint/assets/header-1130px-by-350px%20blue.jpg");
+  background-size: cover;
+  background-position: center 90%;
+}
+
+.header-inner {
+  width: 100%;
+}
