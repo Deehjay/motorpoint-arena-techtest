@@ -1,4 +1,5 @@
 import getEvents from "./api/hello/route";
+import ButtonLink from "./components/ButtonLink";
 import Slideshow from "./components/Carousel";
 import EventCard from "./components/EventCard";
 import "./styles/Home.css";
@@ -75,7 +76,24 @@ export default async function Home() {
                 alt=""
               />
             </div>
-            <div></div>
+            <div id="whats-on">
+              <h2>Whats on</h2>
+            </div>
+            <div className="events-container">
+              {events.map((event) => {
+                return (
+                  <div className="event-card">
+                    <div>
+                      <img src={event.image} alt={event.name} />
+                    </div>
+                    <div id="event-card-info">
+                      <h6>{event.name}</h6>
+                      <ButtonLink url={event.url} text="Buy Tickets" />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
         {/* <div className="events-wrapper">
