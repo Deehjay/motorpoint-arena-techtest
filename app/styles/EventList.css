@@ -1,0 +1,37 @@
+.event-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#list-image-container {
+  width: 20%;
+}
+
+#list-image-container img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+#list-info-container {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+#list-button-container {
+  padding: 2rem;
+}
+
+.odd {
+  background-color: #00539f;
+  color: #ffffff;
+}
+
+.even {
+  background-color: #c7c9dc;
+  color: #0d47a1;
+}

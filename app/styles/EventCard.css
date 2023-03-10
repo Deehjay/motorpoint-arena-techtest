@@ -1,0 +1,8 @@
+.event-card-container {
+  width: 50%;
+  text-align: center;
+}
+
+.event-card-container img {
+  max-width: 100%;
+}
