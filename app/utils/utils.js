@@ -1,5 +1,3 @@
-const unorm = require("unorm");
-
 exports.formatDates = (dates) => {
   if (!dates.length) {
     return "";
