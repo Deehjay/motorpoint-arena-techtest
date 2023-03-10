@@ -14,7 +14,7 @@
 }
 
 .slideshow-wrapper {
-  width: 40%;
+  width: 60%;
 }
 
 .slide-container {
@@ -29,18 +29,10 @@ main {
   justify-content: center;
 }
 
-.events-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-
 .article-wrapper {
   display: flex;
-  width: 60%;
-  align-items: center;
+  width: 70%;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
   margin-bottom: 10px;
@@ -114,4 +106,56 @@ main {
 
 .link-text h3 {
   font-size: 1.2rem;
+}
+
+#whats-on {
+  background: url("https://www.motorpointarenanottingham.com/ArticleMedia/Images/assets/whats-on-button-image-blue.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  text-transform: uppercase;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whats-on h2 {
+  font-size: 2rem;
+  color: #00539f;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.event-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#event-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00539f;
+  color: #ffffff;
+  padding: 8px;
+}
+
+#event-card-info h6 {
+  max-width: 70%;
 }
