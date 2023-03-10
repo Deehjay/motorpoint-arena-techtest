@@ -9,7 +9,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
-  width: 50%;
+  width: 90%;
+  gap: 10px;
 }
 
 .slideshow-wrapper {
@@ -26,4 +27,91 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.events-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.article-wrapper {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.article-left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 10px;
+}
+
+.article-left img {
+  max-width: 100%;
+}
+
+.article-right {
+  width: 75%;
+  align-self: flex-start;
+}
+
+.article-right img {
+  max-width: 100%;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: stretch;
+}
+
+.grey-card {
+  background-color: #c7c9dc;
+  color: #00539f;
+}
+
+.blue-card {
+  background-color: #00539f;
+  color: #ffffff;
+}
+
+.black-card {
+  background-color: black;
+  color: #ffffff;
+}
+
+.link-card img {
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+.box-button {
+  height: 100%;
+  color: #fff;
+  width: 15%;
+  background: url("https://www.motorpointarenanottingham.com/ArticleMedia/Images/assets/arrow_white.png")
+    50% 50% no-repeat #f58220;
+  background-size: contain;
+}
+
+.link-text {
+  text-align: center;
+  width: 70%;
+}
+
+.link-text h3 {
+  font-size: 1.2rem;
 }
