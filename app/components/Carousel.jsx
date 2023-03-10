@@ -16,7 +16,7 @@ const divStyle = {
   display: "flex",
   alignItems: "flex-end",
   justifyContent: "center",
-  backgroundSize: "contain",
+  "background-size": "100%",
   height: "445px",
 };
 const slideImages = [
