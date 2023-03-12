@@ -6,3 +6,47 @@
   justify-content: center;
   margin: 1rem auto;
 }
+
+@media only screen and (max-width: 1280px) {
+  .whats-on-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .whats-on-container {
+    width: 95%;
+  }
+
+  #list-button-container {
+    display: flex;
+    padding: 1rem;
+    width: 25%;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .whats-on-container {
+    width: 90%;
+  }
+  .event-list-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #list-button-container {
+    width: 50%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #list-info-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  #list-image-container {
+    width: 100%;
+  }
+}
