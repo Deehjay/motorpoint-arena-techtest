@@ -1,7 +1,6 @@
 import getEvents from "./api/hello/route";
 import ButtonLink from "./components/ButtonLink";
-import Slideshow from "./components/Carousel";
-import EventCard from "./components/EventCard";
+import Slideshow from "./components/Slideshow";
 import "./styles/Home.css";
 
 export default async function Home() {
@@ -11,6 +10,13 @@ export default async function Home() {
   events.sort(function (a, b) {
     return new Date(a.dates[0].date) - new Date(b.dates[0].date);
   });
+
+  // Slide images to be used with Slideshow component. Array is sliced so that only the closest 3 events show on slideshow
+  const slideImages = events
+    .map((event) => {
+      return { url: event.image, caption: event.name, link: event.url };
+    })
+    .slice(0, 3);
 
   const sidebarLinks = [
     {
@@ -44,7 +50,7 @@ export default async function Home() {
     <main>
       <div className="content-container">
         <div className="slideshow-wrapper">
-          <Slideshow />
+          <Slideshow slideImages={slideImages} />
         </div>
         <div className="article-wrapper">
           <div className="article-left">
@@ -96,11 +102,6 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="events-wrapper">
-        {events.map((event) => {
-          return <EventCard event={event} />;
-        })}
-      </div> */}
       </div>
     </main>
   );
