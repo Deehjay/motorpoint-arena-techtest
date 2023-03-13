@@ -2,6 +2,11 @@
 
 A recreation of the current Motorpoint Arena website by Daniel James, for the Motorpoint Arena tech test. This project was created using Next.js 13 and is responsive to laptop, tablet, and mobile devices.
 
+|                          |     |                                               |
+| ------------------------ | --- | --------------------------------------------- |
+| **Deployed URL**         | :   | https://motorpoint-arena-techtest.vercel.app/ |
+| **Minimum Node version** | :   | 18.11.0                                       |
+
 ## Getting started
 
 Prior to running, install all dependencies:
