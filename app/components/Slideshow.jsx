@@ -9,9 +9,9 @@ const spanStyle = {
   padding: "20px",
   background: "#00539F",
   color: "#ffffff",
-  "font-weight": "bold",
+  fontWeight: "bold",
   width: "100%",
-  "text-align": "center",
+  textAlign: "center",
 };
 
 const Slideshow = ({ slideImages }) => {
@@ -19,7 +19,7 @@ const Slideshow = ({ slideImages }) => {
     display: "flex",
     alignItems: "flex-end",
     justifyContent: "center",
-    "background-size": "100%",
+    backgroundSize: "100%",
     height: "445px",
   });
 
