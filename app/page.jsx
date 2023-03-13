@@ -86,9 +86,9 @@ export default async function Home() {
               <h2>Whats on</h2>
             </div>
             <div className="events-container">
-              {events.map((event) => {
+              {events.map((event, index) => {
                 return (
-                  <div className="event-card">
+                  <div className="event-card" key={index}>
                     <div>
                       <img src={event.image} alt={event.name} />
                     </div>
