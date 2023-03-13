@@ -16,6 +16,7 @@ export default async function WhatsOn() {
             <EventListItem
               event={event}
               oddOrEven={index % 2 === 1 ? "odd" : "even"}
+              key={index}
             />
           );
         })}
